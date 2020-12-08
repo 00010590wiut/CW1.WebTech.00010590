@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body class="loginpage-body">
+        <form class="form-box" action="my_page.html" method="post" name="login-form" onsubmit = "return validated()">
+            <h1>Log in</h1>
+            <input  autocomplete="off" type="text" name="username" placeholder="Enter your username">
+            <div id="username-error"> Please enter your username</div>
+            <input  autocomplete="off" type="password" name="password" placeholder="Enter your password">
+            <div id="password-error"> Please enter your password</div>
+            <button type="submit"> Log in</button>
+        </form>
+        <script src="scripts/login.js"></script>
+    </body>
+</html>
