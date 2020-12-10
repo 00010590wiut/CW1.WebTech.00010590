@@ -4,10 +4,26 @@
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=0.1">
         <title>Login Form</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body class="loginpage-body">
-        <form class="form-box" action="my_page.html" method="post" name="login-form" onsubmit = "return validated()">
+        <nav>
+            <div class="logo">
+                <h3>Seenema</h3>
+            </div>
+                <ul class="menu-links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="discover.html">Discover</a></li>
+                <li> <a href="category.html">Categories</a></li>
+                <li class="active"> <a href="login.html">Log in</a></li>
+                </ul>
+            <div class="mobile-burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <form class="form-box" action="discover.html" method="post" name="login-form" onsubmit = "return validated()">
             <h1>Log in</h1>
             <input  autocomplete="off" type="text" name="username" placeholder="Enter your username">
             <div id="username-error"> Please enter your username</div>
@@ -15,6 +31,7 @@
             <div id="password-error"> Please enter your password</div>
             <button type="submit"> Log in</button>
         </form>
+        
         <script src="scripts/login.js"></script>
     </body>
 </html>

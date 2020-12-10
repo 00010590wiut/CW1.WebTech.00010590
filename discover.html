@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Discover</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/media-query.css">
+    
 </head>
 <body class="discover-body">
     <header class="discover-header">
@@ -18,8 +18,8 @@
             <ul class="menu-links">
             <li > <a href="index.html">Home</a></li>
             <li class="active"> <a href="discover.html">Discover</a></li>
-            <li> <a href="#">Categories</a></li>
-            <li> <a href="#">My page</a></li>
+            <li> <a href="category.html">Categories</a></li>
+            <li> <a href="login.html">Log in</a></li>
             </ul>
         <div class="mobile-burger-menu">
             <div class="line1"></div>
@@ -32,10 +32,7 @@
         <article class="page-heading">
             <h1>Discover the latest films on Seenema</h1>
         </article>
-        <section class="popular-movies">
-            <div class="section_name">
-               <h2>Popular movies</h2>
-            </div>
+        <section class="row1">
             <div class="poster-wrap">
             <div class="posters-group">
                 <div class="poster">
@@ -63,10 +60,7 @@
             </div>
         </div>
         </section>
-        <section class="trending-movies" >
-            <div class="section_name">
-            <h2>Trending movies</h2>
-            </div>
+        <section class="row2" >
             <div class="poster-wrap">
             <div class="posters-group">
                 <div class="poster">
@@ -91,10 +85,7 @@
         </div>
         </section>
         
-        <section class="upcoming-movies" >
-            <div class="section_name">
-            <h2>Upcoming movies</h2>
-            </div>
+        <section class="row3" >
             <div class="poster-wrap">
             <div class="posters-group">
                 <div class="poster">
@@ -119,11 +110,28 @@
         </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="website-title">
+                <h3>Seenema</h3>
+            </div>
+            <div class="footer-nav">
+                <ul footer-nav-items>
+                    <li class="footer-nav-items-link"> <a href="index.html">Home</a></li>
+                    <li class="footer-nav-items-link"> <a href="discover.html">Discover</a></li>
+                    <li class="footer-nav-items-link"> <a href="category.html">Categories</a></li>
+                    <li class="footer-nav-items-link"> <a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+            <div class="external-links">
+                <a class="github" href="https://github.com/00010590wiut/CW1.WebTech.00010590">Link to GitHub account</a>
+                <a class="pdf-document" href="#">Link to report</a>
+            </div>
         </div>
-        
+        <div class="bottom-footer">
+            <p> &copy; This website was created to fulfill Web Technology module’s requirements and does not
+                represent an actual company or service</p>
+        </div>
     </footer>
 
     <script src="scripts/main.js"></script>
